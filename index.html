@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>ClickChangeColor</title>
+   <style>
+       .con {
+           width: 1000px; 
+           height: 500px; 
+           border: none;  
+           margin: auto;
+           font-size: 0px;
+       }
+       .col {
+           width: 100px;
+           height: 50px;
+           background-color: #4CAF50;
+           border: none;
+           color: white;
+           padding: 15px 32px; 
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 12px;
+           margin: 0px;
+           cursor: pointer;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       .h1 {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           color: #4CAF50;
+       }
+       .demo {
+           font-size: 20px;
+           color: #4CAF50;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+   </style>
+</head>
+<body>
+
+    <h1 class="h1">ClickChangeColor</h1>
+
+    <p class="h1">Click to change the color:</p>
+
+    <div class="con">
+        <button style="Background-color: blue;" onclick="color1()" class="col">Blue</button>
+        <button style="Background-color: Red;" onclick="color2()" class="col">Red</button>
+        <button style="Background-color: Purple;" onclick="color3()" class="col">Purple</button>
+        <button style="Background-color: Salmon;" onclick="color4()" class="col">Salmon</button>
+        <button style="Background-color: Green;" onclick="color5()" class="col">Green</button>
+        <button style="Background-color: Olive;" onclick="color6()" class="col">Olive</button>
+        <button style="Background-color: Cyan;" onclick="color7()" class="col">Cyan</button>
+        <button style="Background-color: Darkblue;" onclick="color8()" class="col">Darkblue</button>
+        <button style="Background-color: Black;" onclick="color9()" class="col">Black</button>
+        <button style="Background-color: White; color: black;" onclick="color10()" class="col">White</button>
+    </div>
+
+    <p class="demo" id="demo"></p>
+
+    <script>
+    function color1() {
+        document.body.style.backgroundColor = 'Blue';
+        document.getElementById("demo").innerHTML = "Blue";
+    }
+
+    function color2() {
+        document.body.style.backgroundColor = 'Red';
+        document.getElementById("demo").innerHTML = "Red";
+    }
+
+    function color3() {
+        document.body.style.backgroundColor = 'Purple';
+        document.getElementById("demo").innerHTML = "Purple";
+    }
+
+    function color4() {
+        document.body.style.backgroundColor = 'salmon';
+        document.getElementById("demo").innerHTML = "Salmon";
+    }
+
+    function color5() {
+        document.body.style.backgroundColor = 'Green';
+        document.getElementById("demo").innerHTML = "Green";
+    }
+
+    function color6() {
+        document.body.style.backgroundColor = 'Olive';
+        document.getElementById("demo").innerHTML = "Olive";
+    }
+
+    function color7() {
+        document.body.style.backgroundColor = 'Cyan';
+        document.getElementById("demo").innerHTML = "Cyan";
+    }
+
+    function color8() {
+        document.body.style.backgroundColor = 'Darkblue';
+        document.getElementById("demo").innerHTML = "Darkblue";
+    }
+
+    function color9() {
+        document.body.style.backgroundColor = 'Black';
+        document.getElementById("demo").innerHTML = "Black";
+//        document.getElementById("demo").style.color = 'White';
+    }
+
+    function color10() {
+        document.body.style.backgroundColor = 'White';
+        document.getElementById("demo").innerHTML = "White";
+//        document.getElementById("demo").style.color = 'Black';
+    }
+
+//    const col2 = document.getElementById('col2');
+//    col2.addEventListener('click', function onClick(event) {
+//    document.col.backgroundColor = 'salmon';
+
+//    });
+    </script>
+
+</body>
+</html>
